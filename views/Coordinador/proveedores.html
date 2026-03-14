@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Proveedores</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Mantenimiento de proveedores</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proveedor</th>
+                        <th>Correo electrónico</th>
+                        <th>Teléfono</th>
+                        <th>Categoría</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Proveedor 1</td>
+                        <td>proveedor1@gmail.com</td>
+                        <td>0000-00000</td>
+                        <td>Productos catering service</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Proveedor 2</td>
+                        <td>proveedor2@gmail.com</td>
+                        <td>0000-00000</td>
+                        <td>Mobiliario</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <!--Ingreso de proveedores-->
+        <!--Botón para desplegar la ventana emergente con la info. para registrar un proveedor-->
+        <input type="image" src="../../img/agregar.png" id="btn-abrir-modal" class="btn__flotante"
+            title="Registrar proveedor" width="50" height="50">
+    </section>
+
+    <!--Modal-->
+    <!--Elegir los elementos de la reserva-->
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Registro de proveedores</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre del proveedor</label>
+                        <input class="input__opcion" type="text" name="" id="nombre">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Correo electrónico</label>
+                        <input class="input__opcion" type="email" name="" id="email">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Número telefónico</label>
+                        <input class="input__opcion" type="number" name="" id="telefono">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Seleccione la categoría:</label>
+                        <input class="input__opcion" list="categoria"><datalist id="categoria">
+                            <option value="Productos catering service"></option>
+                            <option value="Mobiliario"></option>
+                            <option value="Utensilios de cocina"></option>
+                            <option value="Blobos"></option>
+                            <option value="Otro"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Estado</label>
+                        <input class="input__opcion" type="text" name="" id="estado">
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos();">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/Administrador/validacionesProveedores.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Ofertas</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Sección de promociones</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de evento</th>
+                        <th>Porcentaje</th>
+                        <th>Características</th>
+                        <th>Imagen</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fiesta de quince años</td>
+                        <td>40</td>
+                        <td>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver"  alt="">
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="../../img/quince_anios.png" alt="">
+                            </figure>
+                        </td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="">
+                        </td>
+                        <td>
+                            <input type="image" class="btn-eliminar" src="../../img/eliminar.webp" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fiesta infantil</td>
+                        <td>60</td>
+                        <td>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver"  alt="">
+                        </td>
+                        <td>
+                            <figure>
+                                <img src="../../img/fiesta_infantil.png" alt="">
+                            </figure>
+                        </td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="">
+                        </td>
+                        <td>
+                            <input type="image" class="btn-eliminar"  src="../../img/eliminar.webp" alt="">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para agregar una promoción-->
+        <a><input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+                title="Crear promoción" width="50" height="50"></a>
+    </section>
+
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal">
+            <!--Elegir los elementos de la cotización-->
+            <h1 class="titulo__formulario">Registro de promoción</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Tipo de evento:</label>
+                        <input class="input__opcion" type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Porcentaje de descuento:</label>
+                        <input class="input__opcion" type="text" name="" id="">
+                    </div>
+                    <div class="">
+                        <label class="dialogo__label">Elija una imagen:</label>
+                        <br>
+                        <label for="file"><i class="fa fa-plus cargar__imagen"></i></label>
+                        <input type="file" name="" id="file" onchange="CargarImagen(this.value);">
+                        <div id="mostrar__imagen"></div>
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Estado:</label>
+                        <input class="input__opcion" list="estado"><datalist id="estado">
+                            <option value="Activo"></option>
+                            <option value="Inactivo"></option>
+                        </datalist>
+                    </div>
+
+                    <!--Sección para agregar características-->
+                    <div>
+                        <label class="dialogo__label">Agregar característica:</label>
+                        <input type="text" class="input__opcion add"><input type="image" src="../../img/agregar.png" alt=""
+                            width="20" height="20">
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+        <section>
+        </section>
+    </section>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+</body>
+
+</html>

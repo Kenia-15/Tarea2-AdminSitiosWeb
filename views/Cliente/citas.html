@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Citas</title>
+</head>
+
+<body>
+    <!--Sección de citas/visitas-->
+    <section class="separacion">
+        <section>
+            <div class="titulo__rep__cita">
+                <h1>Complete la información solicitada</h1>
+            </div>
+            <div class="section__rep__cita">
+                <form action="" method="">
+                    <div>
+                        <label>Asunto</label>
+                        <br>
+                        <input class="rep__cita__opcion" type="text" name="" id="asunto">
+                    </div>
+
+                    <div>
+                        <label>Ubicación</label>
+                        <br>
+                        <input class="rep__cita__opcion" list="ubicacion" id="ubicacionCita"><datalist id="ubicacion">
+                            <option value="Ubicación1"></option>
+                            <option value="Ubicación2"></option>
+                            <option value="Ubicación3"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <textarea class="rep__cita__opcion" name="" id="detalle" style="resize: none;">Detalle</textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" class="boton_rep__cita" value="Enviar" onclick="validarCampos();">
+                    </div>
+                </form>
+        </section>
+    </section>
+
+    <!--Visualización y actualización de citas-->
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Citas registradas</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Ubicación</th>
+                        <th>Coordinador</th>
+                        <th>Asunto</th>
+                        <th>Detalle</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15/11/2024</td>
+                        <td>01:30</td>
+                        <td>Ubicación1</td>
+                        <td>Coordinador1</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20/08/2024</td>
+                        <td>08:30</td>
+                        <td>Ubicación3</td>
+                        <td>Coordinador2</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../../js/validaciones/validacionesCitas.js"></script>
+</body>
+
+</html>

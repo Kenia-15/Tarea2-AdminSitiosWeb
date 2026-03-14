@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/principal/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!--Accesos menú-->
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="item"><a href="../index.html">Animaciones Moreno</a></li>
+                <li class="item">
+                    <figure>
+                        <img src="../img/idioma.webp" alt="" width="20" height="20">
+                        <a href="">Idioma</a>
+                    </figure>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Cuerpo del contenido-->
+    <section>
+        <div id="titulo">
+            <h2>Animaciones Moreno</h2>
+        </div>
+        <div id="sub__titulo">
+            <label>Iniciar Sesión</label>
+        </div>
+        <div id="login">
+            <form method="dialog">
+                <div>
+                    <label>Correo electrónico</label>
+                    <br>
+                    <input type="email" class="login__opcion" id="email">
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <br>
+                    <input type="password" class="login__opcion" id="password" name="password">
+                </div>
+                <div>
+                    <input type="button" class="btn__login" value="Iniciar Sesión" onclick="validarCampos();">
+                </div>
+                <div class="registro">
+                    <span>¿No tienes una cuenta? </span><a href="registro.html">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/validaciones/Acceso/validacionesLogin.js"></script>
+</body>
+
+</html>

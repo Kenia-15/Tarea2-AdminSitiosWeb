@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <title>Citas</title>
+</head>
+
+<body>
+
+    <section class="separacion">
+        <section>
+            <div class="titulo__rep__cita">
+                <h1>Complete la información solicitada</h1>
+            </div>
+            <div class="section__rep__cita">
+                <form action="" method="">
+                    <div>
+                        <label>Asunto</label>
+                        <br>
+                        <input class="rep__cita__opcion" type="text" name="" id="asunto">
+                    </div>
+
+                    <div>
+                        <label>Ubicación</label>
+                        <br>
+                        <input class="rep__cita__opcion" list="ubicacion" id="ubicacionCita"><datalist id="ubicacion">
+                            <option value="Ubicación1"></option>
+                            <option value="Ubicación2"></option>
+                            <option value="Ubicación3"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <textarea class="rep__cita__opcion" name="" id="detalle" style="resize: none;">Detalle</textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" class="boton_rep__cita" value="Enviar" onclick="validarCampos();">
+                    </div>
+                </form>
+        </section>
+    </section>
+
+    <section class="tabla">
+        <!--Barra de búsqueda-->
+        <div class="encabezado__tabla">
+            <h1>Solicitudes de citas</h1>
+            <form>
+                <input type="text" placeholder="Cliente" class="input__opcion">
+            </form>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Ubicación</th>
+                        <th>Asunto</th>
+                        <th>Detalle</th>
+                        <th>Estado</th>
+                        <th>Responder</th>
+                        <th>Rechazar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre1 Apellido</td>
+                        <td>Ubicación1</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Pendiente</td>
+                        <td>
+                            <input type="image" src="../../img/responder.png" alt="" width="20" height="20" class="btn-responder">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" width="20" height="20" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre2 Apellido</td>
+                        <td>Ubicación3</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Resuelto</td>
+                        <td>
+                            <input type="image" src="../../img/responder.png" alt="" width="20" height="20" class="btn-responder">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" width="20" height="20" class="btn-eliminar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../../js/validaciones/validacionesCitas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <title>Servicios</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Gestión de Servicios</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del servicio</th>
+                        <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mantelería</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>80,000</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Catering Service</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>300,000</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mesas y sillas</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>100,000</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar un servicio-->
+        <input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+            title="Agregar servicio" width="50" height="50">
+    </section>
+
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario" style="margin-left: -30px;">Mantenimiento de servicios</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre del servicio</label>
+                        <input class="input__opcion" type="text" name="" id="servicio">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Estado</label>
+                        <input class="input__opcion" type="text" name="" id="estado">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Descripción</label>
+                        <textarea class="input__opcion" name="" id="descripcion" style="resize: none;"></textarea>
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Precio</label>
+                        <input class="input__opcion" type="number" name="" id="precio">
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos();">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/validacionesServicios.js"></script>
+</body>
+
+</html>

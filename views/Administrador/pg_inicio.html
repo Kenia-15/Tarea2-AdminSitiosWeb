@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Contenido página web</title>
+</head>
+
+<body>
+    <section>
+        <section>
+            <div class="titulo__rep__cita">
+                <h2>Sección de inicio de la página</h2>
+            </div>
+
+            <div class="section__rep__cita">
+                <form action="" method="">
+                    <div>
+                        <label>Título</label>
+                        <br>
+                        <input class="rep__cita__opcion" type="text" value="Sobre nosotros"  id="tituloInicio">
+                    </div>
+
+                    <div>
+                        <label>Descripción</label>
+                        <br>
+                        <textarea class="rep__cita__opcion" style="resize: none;" name=""
+                            id="descripcionInicio">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet lacinia ante facilisis hendrerit.
+                            Nam in sapien ullamcorper, aliquet erat at, posuere sem. Nullam leo sem, rutrum in tortor a. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Etiam aliquet lacinia ante facilisis hendrerit. Nam in
+                            sapien ullamcorper, aliquet erat at, posuere sem. Nullam leo sem, rutrum in tortor a."</textarea>
+                    </div>
+
+                    <div>
+                        <div class="">
+                            <label class="dialogo__label">Elija una imagen:</label>
+                            <br>
+                            <label for="file"><i class="fa fa-plus cargar__imagen"></i></label>
+                            <input type="file" name="" id="file" onchange="CargarImagen(this.value);">
+                            <div id="mostrar__imagen"></div>
+                        </div>
+                        <figure>
+                            <img src="../../img/organizar-eventos.webp" alt="" width="200" height="100">
+                        </figure>
+                    </div>
+                    <br><br>
+                    <div>
+                        <input class="boton" type="submit" value="Editar">
+                        <input class="boton" type="submit" value="Guardar" onclick="validarCampos('inicio');">
+                        <input class="boton" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <script src="../../js/validaciones/Administrador/validacionesPagina.js"></script>
+</body>
+
+</html>

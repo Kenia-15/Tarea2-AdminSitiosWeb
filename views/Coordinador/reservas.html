@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Reservas</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <!--Se muestran las reservas realizadas por los clientes-->
+        <div class="encabezado__tabla">
+            <h1>Reservas de clientes</h1>
+            <form>
+                <input class="input__opcion" type="text" placeholder="Buscar">
+            </form>
+        </div>
+
+        <div class="cuerpo__tabla reservas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Teléfono</th>
+                        <th>Tipo de evento</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Cant. de personas</th>
+                        <th>Ubicación</th>
+                        <th>Detalles</th>
+                        <th>Lista de invitados</th>
+                        <th>Editar</th>
+                        <th>Aprobar</th>
+                        <th>Rechazar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cliente1</td>
+                        <td>0000-00000</td>
+                        <td>Fiesta infantil</td>
+                        <td>30/08/2024</td>
+                        <td>08:30</td>
+                        <td>150</td>
+                        <td>Ubicación1</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>
+                            <input type="image" src="../../img/visualizar.png" alt="" class="btn-ver">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/aprobar.webp" alt="" class="btn-aprobar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar" width="20"
+                                height="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cliente2</td>
+                        <td>0000-00000</td>
+                        <td>Quince años</td>
+                        <td>18/09/2024</td>
+                        <td>04:00</td>
+                        <td>200</td>
+                        <td>Ubicación3</td>
+                        <td>orem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>
+                            <input type="image" src="../../img/visualizar.png" alt="" class="btn-ver btn-abrir-modal-inv">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/aprobar.webp" alt="" class="btn-aprobar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--Sección para creación de reservas-->
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para crear la reserva-->
+        <input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png" title="Crear reserva"
+            width="50" height="50">
+    </section>
+
+    <!--Modal-->
+    <!--Elegir los elementos de la reserva-->
+    <section class="formulario">
+        <!--Elegir los elementos de la reserva-->
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Registro de reserva</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre del cliente:</label>
+                        <input type="text" name="" class="input__opcion">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Apellidos del cliente:</label>
+                        <input type="text" name="" class="input__opcion">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Número telefónico:</label>
+                        <input type="text" name="" class="input__opcion">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Seleccione el tipo de evento:</label>
+                        <input class="input__opcion" list="evento"><datalist id="evento">
+                            <option value="Fiesta Infantil"></option>
+                            <option value="Quince años"></option>
+                            <option value="Boda"></option>
+                            <option value="Reunión empresarial"></option>
+                            <option value="Otro"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <p class="dialogo__label">¿Qué servicios deseas incluir?</p>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span class="dialogo__label">Animación</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Catering service</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Mesas</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Sillas</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Mantelería</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Decoración</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Música</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <span>Salón de eventos</span>
+                            <input type="image" src="../../img/visualizar.png" class="btn-ver-modal">
+                        </div>
+
+                        <div>
+                            <label class="dialogo__label">Selecciona la fecha:</label>
+                            <input class="input__opcion" type="date" name="" id="">
+                        </div>
+                        <div>
+                            <label class="dialogo__label">Selecciona la hora:</label>
+                            <input class="input__opcion" type="time" name="" id="">
+                        </div>
+                        <div>
+                            <textarea name="" id="" class="input__opcion" style="margin-top: 5px; resize: none;"
+                                placeholder="Digita la ubicación"></textarea>
+                        </div>
+                        <div>
+                            <label class="dialogo__label">Cant. de personas:</label>
+                            <input type="number" name="" id="" class="input__opcion">
+                        </div>
+                        <div>
+                            <textarea name="" id="" class="input__opcion" placeholder="Detalles a tomar en cuenta"
+                                style="margin-top: 5px; resize: none;"></textarea>
+                        </div>
+                        <div>
+                            <label class="dialogo__label">Monto Total:</label>
+                            <input type="number" name="" id="" class="input__opcion">
+                        </div>
+
+                        <!--Sección de lista de invitados-->
+                        <div>
+                            <h1 style="margin-top: 10px;">Lista de invitados</h1>
+                            <input id="btn-abrir-modal-inv" type="image" src="../../img/agregar.png" alt="" width="20"
+                                height="20">
+                        </div>
+
+                        <div class="btn-modal">
+                            <input class="boton btn-save" type="submit" value="Guardar">
+                            <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                        </div>
+                </form>
+            </div>
+
+        </dialog>
+    </section>
+
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal__invitados">
+            <h1 class="titulo__formulario">Lista de invitados</h1>
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre</label>
+                        <input class="input__opcion" type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Teléfono</label>
+                        <input class="input__opcion" type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Correo electrónico</label>
+                        <input class="input__opcion" type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Acompañantes</label>
+                        <input class="input__opcion" type="number" name="" id="">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Adultos</label>
+                        <input class="input__opcion" type="number" name="" id="">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Niños</label>
+                        <input class="input__opcion" type="number" name="" id="">
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/modalInvitados.js"></script>
+</body>
+
+</html>

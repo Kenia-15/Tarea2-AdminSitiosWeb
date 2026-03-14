@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <section>
+        <section>
+            <div class="titulo__perfil">
+                <h2>Configuración de cuenta</h2>
+            </div>
+            <div class="section__perfil">
+                <form action="" method="">
+                    <div>
+                        <label>Nombre</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="text" class="perfil__opcion" value="Ejemplo de nombre" title="" placeholder="">
+                    </div>
+
+                    <div>
+                        <label>Apellidos</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="text" class="perfil__opcion" value="Ejemplo de apellido" title="" placeholder="">
+                    </div>
+
+                    <div>
+                        <label>Correo electrónico</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="email" class="perfil__opcion" value="Ejemplo de apellido" title=""
+                            placeholder="correo@gmail.com">
+                    </div>
+
+                    <div>
+                        <label>Contraseña</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="password" class="perfil__opcion" value="*******" title="" placeholder="">
+                    </div>
+
+                    <div>
+                        <input type="submit" class="boton_perfil" value="Guardar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <!--Información adicional-->
+            <div class="titulo__perfil">
+                <h2>Información adicional</h2>
+            </div>
+            <div class="section__perfil">
+                <form action="" method="">
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="number" class="perfil__opcion" value="88888888" title="" placeholder="">
+                    </div>
+
+                    <div>
+                        <label>Dirección</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="text" class="perfil__opcion" value="Ejemplo de dirección" title="" placeholder="">
+                    </div>
+
+                    <div>
+                        <label>Fecha de nacimiento</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input type="date" class="perfil__opcion" value="" title="" placeholder="">
+                    </div>
+
+                    <div>
+                        <input type="submit" class="boton_perfil" value="Guardar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <!--Información de preferencias-->
+            <div class="titulo__perfil">
+                <h2>Preferencias</h2>
+            </div>
+            <div class="section__perfil">
+                <form action="" method="">
+                    <div>
+                        <p>¿Qué música prefieres</p>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Rock</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Balada</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Ranchera</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Pop</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Electrónica</span>
+                        <br><input type="checkbox" name=""> <span>Romántica</span>
+                    </div>
+                    <br>
+                    <div>
+                        <p>¿Qué tipo de comida prefieres</p>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Arroz con pollo</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Arroz con camarones</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Pollo Italiano</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Hamburguesa</span>
+                    </div>
+                    <br>
+                    <div>
+                        <p>¿Qué tipo de decoración prefieres</p>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Decoración 1</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Decoración 2</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Decoración 3</span>
+                        <br>
+                        <input type="checkbox" name="">
+                        <span>Decoración 4</span>
+                    </div>
+
+                    <div>
+                        <input type="submit" class="boton_perfil" value="Guardar">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--Eliminación de cuenta-->
+        <section>
+            <div class="titulo__perfil">
+                <h2>Eliminación de cuenta</h2>
+            </div>
+            <div class="section__perfil">
+                <form action="" method="">
+                    <a href="" onclick="eliminarCuenta();">¿Desea eliminar la cuenta?</a>
+                </form>
+            </div>
+        </section>
+    <script src="../../js/mensajes/mensajesAlerta.js"></script>
+</body>
+
+</html>

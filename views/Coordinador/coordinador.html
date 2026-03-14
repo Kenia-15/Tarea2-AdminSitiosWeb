@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="../../css/principal/menu.css">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <title>Coordinador de eventos</title>
+</head>
+
+<header class="header">
+    <div class="contenedor-titulo">
+        <h1 class="titulo">Animaciones Moreno</h1>
+    </div>
+
+    <div class="contenedor-menu">
+        <nav class="nav-menu">
+            <!--Opciones barra ingreso-->
+            <ul id="iconos">
+                <!--Botón de notificaciones-->
+                <li class="iconos__li">
+                    <a href=""><input class="icono__image" type="image" src="../../img/notificación.png" alt=""></a>
+                </li>
+                <!--Botón de configuración-->
+                <li class="iconos__li">
+                    <a href="#" id="perfil"><input class="icono__image" type="image" src="../../img/configuracion.png"
+                            alt=""></a>
+                </li>
+                <!--Botón de cambio de idioma-->
+                <li class="iconos__li">
+                    <a href=""><input class="icono__image" type="image" src="../../img/idioma.webp" alt=""></a>
+                </li>
+                <!--Botón de directorio-->
+                <li class="iconos__li">
+                    <a href=""><input class="icono__image" type="image" src="../../img/directorio.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <!--Menú lateral-->
+    <section id="seccion__menu">
+        <div>
+            <nav class="nav">
+                <ul class="lista__menu">
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="cotizaciones-coordinador" class="lista__opcion">Cotizaciones</a>
+                        </div>
+                    </li>
+
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="reservas-coordinador" class="lista__opcion">Reservas</a>
+                        </div>
+                    </li>
+
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="citas-coordinador" class="lista__opcion">Citas</a>
+                        </div>
+                    </li>
+
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="promociones-coordinador" class="lista__opcion">Promociones</a>
+                        </div>
+                    </li>
+
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="reportes" class="lista__opcion">Reportes</a>
+                        </div>
+                    </li>
+
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="consultas" class="lista__opcion">Consultas</a>
+                        </div>
+                    </li>
+
+                    <li class="lista__item">
+                        <div class="nav_div">
+                            <a href="#" id="proveedores" class="lista__opcion">Proveedores</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cargar__contenido">
+            <main>
+                <iframe src="../../views/Coordinador/promociones.html" id="iframe__menu"></iframe>
+            </main>
+        </div>
+    </section>
+
+    <!--Sección final de la página-->
+    <footer class="pie__pagina">
+        <div class="footer">
+            <div class="footer__seccion">
+                <h2>Animaciones Moreno</h2>
+                <div class="redes__sociales">
+                    <a href="#" class="fa fa-brands fa-facebook-f"></a>
+                    <a href="#" class="fa fa-brands fa-instagram"></a>
+                    <a href="#" class="fa fa-brands fa-twitter"></a>
+                    <a href="#" class="fa fa-brands fa-pinterest"></a>
+                </div>
+            </div>
+
+            <div class="footer__seccion">
+                <h2>Métodos de pago</h2>
+                <div class="metodos__pago">
+                    <a class="fa fa-brands fa-cc-visa"></a>
+                    <a class="fa fa-brands fa-paypal"></a>
+                    <a class="fa fa-brands fa-cc-mastercard"></a>
+                </div>
+            </div>
+
+            <div class="footer__seccion">
+                <div class="ubicacion">
+                    <h2>Ubicación</h2>
+                    <p>Pérez Zeledón, <br>San Isidro del General</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <small>&copy;2024 Animaciones Moreno - Todos los derechos Reservados</small>
+        </div>
+    </footer>
+
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/administrador.js"></script>
+    <script src="../../js/cargarPaginas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/principal.css">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="galeria">
+        <h1 class="encabezado__tabla">Galería</h1>
+
+        <section class="galeria__img">
+            <div class="img">
+                <figure><img src="../../img/galeria_1.png" alt="" width="500" height="300"></figure>
+                <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                <figure><img src="../../img/galeria_2.jpg" alt="" width="500" height="300"></figure>
+                <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+            </div>
+            <div class="img">
+                <figure><img src="../../img/galeria_3.jpg" alt="" width="500" height="300"></figure>
+                <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                <figure><img src="../../img/galeria_4.jpg" alt="" width="500" height="300"></figure>
+                <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+            </div>
+            <div class="img">
+                <figure><img src="../../img/galeria_5.png" alt="" width="500" height="300"></figure>
+                <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                <figure><img src="../../img/galeria_6.jpg" alt="" width="500" height="300"></figure>
+                <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+            </div>
+        </section>
+    </section>
+
+    <br><br><br>
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar un imagen-->
+        <input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+            title="Agregar imagen" width="50" height="50">
+    </section>
+
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Elija una imagen</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <input type="image" src="../../img/manteleria.jpg" alt="" width="300" height="200"
+                            style="margin-left: -50px;">                        
+                    </div>
+                    <div>
+                        <label for="file"><i class="fa fa-plus imagen__click-modal"></i></label>
+                        <input type="file" name="" id="file" onchange="CargarImagen(this.value);">
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+</body>
+
+</html>

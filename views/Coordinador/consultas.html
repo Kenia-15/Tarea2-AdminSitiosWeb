@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Consultas</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Consultas de clientes</h1>
+            <form>
+                <input class="input__opcion" type="text" placeholder="Buscar">
+            </form>
+        </div>
+
+        <div class="cuerpo__tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Correo electrónico</th>
+                    <th>Mensaje</th>
+                    <th>Responder</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cliente 1</td>
+                    <td>cliente1@gmail.com</td>
+                    <td>
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet lacinia ante facilisis
+                            hendrerit. </p>
+                    </td>
+                    <td>
+                        <input type="image" src="../../img/responder.png" alt="" width="20" height="20" class="btn-responder">
+                    </td>
+                    <td>Pendiente</td>
+                </tr>
+                <tr>
+                    <td>Cliente2</td>
+                    <td>cliente2@gmail.com</td>
+                    <td>
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet lacinia ante facilisis
+                            hendrerit. </p>
+                    </td>
+                    <td>
+                        <input type="image" src="../../img/responder.png" alt="" width="20" height="20" class="btn-responder">
+                    </td>
+                    <td>Pendiente</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </section>
+
+    <!--Formulario para responder-->
+    <section class="formulario">
+        <dialog id="modal-responder">
+            <h1 class="titulo__formulario">Responder a cotización</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <textarea class="input__opcion" style="resize: none;" id="" placeholder="Mensaje"></textarea>
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <script src="../../js/modalResponder.js"></script>
+</body>
+
+</html>

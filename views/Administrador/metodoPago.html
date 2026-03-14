@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <title>Métodos de pago</title>
+</head>
+
+<body>
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Métodos de pago</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Método de pago</label>
+                        <input class="input__opcion" type="text" id="metodo">
+                    </div>
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos();">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar un método de pago-->
+        <a><input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+                title="Agregar Método de Pago" width="50" height="50"></a>
+    </section>
+
+    <!--Información método de pago-->
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Administrar métodos de pago</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Método</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tarjeta de Crédito</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Paypal</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20"
+                                height="20">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/Administrador/validacionesMetodoPago.js"></script>
+</body>
+
+</html>

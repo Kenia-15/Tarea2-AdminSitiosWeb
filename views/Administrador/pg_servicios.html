@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Contenido página web</title>
+</head>
+
+<body>
+    <section class="separacion">
+        <section>
+            <div class="titulo__rep__cita">
+                <h2>Título de la página</h2>
+            </div>
+            <div class="section__rep__cita">
+                <form action="" method="">
+                    <div>
+                        <label>Título</label>
+                        <input type="image" src="../../img/editar.png" alt="" width="20" height="20" class="btn-editar">
+                        <br>
+                        <input class="rep__cita__opcion" type="text" value="Servicios">
+                    </div>
+                    <div>
+                        <input type="submit" class="boton_rep__cita" value="Guardar" style="margin-top: -3px;">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Sección de servicios</h1>
+        </div>
+
+        <div class="cuerpo__tabla tbl-reserva">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Imágen</th>
+                        <th>Contenido</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Animación</td>
+                        <td>
+                            <figure>
+                                <img src="../../img/animación.jpg" alt="" width="50" height="50">
+                            </figure>
+                        </td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Catering Service</td>
+                        <td>
+                            <figure>
+                                <img src="../../img/catering_service.jpg" alt="" width="50" height="50">
+                            </figure>
+                        </td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mesas y sillas</td>
+                        <td>
+                            <figure>
+                                <img src="../../img/mesas_sillas.jpeg" alt="" width="50" height="50">
+                            </figure>
+                        </td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Activo</td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar un servicio-->
+        <input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+            title="Agregar servicio" width="50" height="50">
+    </section>
+
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Mantenimiento servicios</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre del servicio</label>
+                        <input class="input__opcion" type="text" name="" id="nombre">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Elija una imagen:</label>
+                        <br>
+                        <label for="file"><i class="fa fa-plus cargar__imagen"></i></label>
+                        <input type="file" name="" id="file" onchange="CargarImagen(this.value);">
+                        <div id="mostrar__imagen"></div>
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Contenido</label>
+                        <textarea style="resize: none;" class="input__opcion" name="" id="contenido"></textarea>
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos('servicios');">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/Administrador/validacionesPagina.js"></script>
+</body>
+
+</html>

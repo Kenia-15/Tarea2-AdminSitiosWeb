@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/principal/registro.css">
+   
+    <title>Registro</title>
+</head>
+
+<body>
+    <!--Accesos menú-->
+    <header>
+        <nav>
+            <ul id="menu">
+                <li class="item"><a href="../index.html">Animaciones Moreno</a></li>
+                <li class="item">
+                    <figure>
+                        <img src="../img/idioma.webp" alt="" width="20" height="20">
+                        <a href="">Idioma</a>
+                    </figure>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Cuerpo del contenido-->
+    <section>
+        <div id="titulo">
+            <h2>Animaciones Moreno</h2>
+        </div>
+        <div id="sub__titulo">
+            <label>Registrarse</label>
+        </div>
+        <div id="registro">
+            <form action="" method="">
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" class="registro__opcion" id="nombre">
+                </div>
+                <div>
+                    <label>Apellidos</label>
+                    <input type="text" class="registro__opcion" id="apellidos">
+                </div>
+                <div>
+                    <label>Correo electrónico</label>
+                    <input type="email" class="registro__opcion" id="email">
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <input type="password" class="registro__opcion" id="password">
+                    <span class="fa fa-fw fa-eye"></span>
+                </div>
+                <div id="checkbox">
+                    <input type="checkbox" name="" id=""><label>Aceptar términos y condiciones</label>
+                </div>
+                <div>
+                    <input type="button" class="btn__registro" value="Registrarse" onclick="validarCampos();">
+                </div>
+                <div class="login">
+                    <span>¿Ya tienes una cuenta? </span><a href="login.html">Iniciar Sesión</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="../js/validaciones/Acceso/validacionesRegistro.js"></script>
+</body>
+
+</html>

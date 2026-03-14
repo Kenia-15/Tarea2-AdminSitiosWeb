@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Cuentas</title>
+</head>
+
+<body>   
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Registro de usuarios</h1>
+            <div class="formulario__modal">
+                <!--Creación de cuentas-->
+                
+                <form >
+                    <div>
+                        <label class="dialogo__label">Nombre</label>
+                        <input type="text" class="input__opcion" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Apellidos</label>
+                        <input type="text" class="input__opcion" name="apellidos" id="apellidos">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Correo electrónico</label>
+                        <input type="email" name="email" value="" title="" placeholder="" class="input__opcion" id="email">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Contraseña</label>
+                        <input type="password" value="" title="" placeholder="" class="input__opcion" name="password" id="password">
+                    </div>
+
+                    <!--<span class="fa fa-fw fa-eye"></span>-->
+                    <label class="dialogo__label">Rol</label>
+                    <input list="cuenta" class="input__opcion" name="rol" id="rol">
+                    <datalist id="cuenta">
+                        <option value="Administrador"></option>
+                        <option value="Coordinador"></option>
+                        <option value="Cliente"></option>
+                    </datalist>   
+                    
+                    <div class="btn-modal">
+                        <input class="boton btn-save" onclick="validarCampos();" value="Guardar">      
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>            
+        </dialog>
+    </section>
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar un evento-->
+        <a><input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+            title="Crear Cuenta" width="50" height="50"></a>
+    </section>
+
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Administrar cuentas</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Email</th>
+                        <th>Contrasena</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Apellidos</td>
+                        <td>nombre@gmail.com</td>
+                        <td>*******</td>
+                        <td>Coordinador</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20" height="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre2</td>
+                        <td>Apellidos</td>
+                        <td>nombre2@gmail.com</td>
+                        <td>*******</td>
+                        <td>Coordinador</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20" height="20">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/Administrador/validacionesCrearCuenta.js"></script>
+</body>
+
+</html>

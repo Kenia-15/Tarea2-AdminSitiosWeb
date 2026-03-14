@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Mantenimiento de eventos</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del evento</th>
+                        <th>Descripcion</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quince años</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="">
+                        </td>
+                        <td>
+                            <input class="btn-eliminar" type="image" src="../../img/eliminar.webp" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cumpleaños</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20"
+                                height="20">
+                        </td>
+                        <td>
+                            <input class="btn-eliminar" type="image" src="../../img/eliminar.webp" alt="" width="20"
+                                height="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Boda</td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20"
+                                height="20">
+                        </td>
+                        <td>
+                            <input class="btn-eliminar" type="image" src="../../img/eliminar.webp" alt="" width="20"
+                                height="20">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario" style="margin-left: -40px;">Mantenimiento de eventos</h1>
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre del evento</label>
+                        <input type="text" name="" class="input__opcion" id="evento">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Estado</label>
+                        <input type="text" name="" class="input__opcion" id="estado">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Descripción</label>
+                        <textarea name="" class="input__opcion" style="resize: none;" id="descripcion"></textarea>
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos();">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar un evento-->
+        <a><input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+                title="Agregar evento" width="50" height="50"></a>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/validacionesEventos.js"></script>
+</body>
+
+</html>

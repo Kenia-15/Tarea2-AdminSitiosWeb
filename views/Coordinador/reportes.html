@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Reportes</title>
+</head>
+
+<body>
+    <section>
+        <section>
+            <div class="titulo__rep__cita">
+                <h2>Generación de reportes</h2>
+            </div>
+            <div class="section__rep__cita">
+                <form action="" method="">
+                    <div>
+                        <label>Elija el tipo de reporte</label>
+                        <br>
+                        <input class="rep__cita__opcion" list="reporte" id="reportes"><datalist id="reporte">
+                            <option value="Clientes"></option>
+                            <option value="Reservas"></option>
+                            <option value="Citas"></option>
+                        </datalist>
+                    </div>
+
+                    <div>
+                        <label>Fecha inicio</label>
+                        <br>
+                        <input class="rep__cita__opcion" type="date" name="" id="fechaIni">
+                    </div>
+
+                    <div>
+                        <label>Fecha fin</label>
+                        <br>
+                        <input class="rep__cita__opcion" type="date" name="" id="fechaFin">
+                    </div>
+
+                    <div>
+                        <input type="submit" class="boton_rep__cita" value="Generar reporte" onclick="validarCampos();">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <script src="../../js/validaciones/validacionesReportes.js"></script>
+</body>
+
+</html>

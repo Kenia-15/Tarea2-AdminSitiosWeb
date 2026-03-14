@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <link rel="stylesheet" href="../../css/principal/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Cotizaciones</title>
+</head>
+
+<body>
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para agregar una cotizacion-->
+        <input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+            title="Crear cotización" width="50" height="50">
+    </section>
+
+    <!--Modal-->
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario">Complete la información solicitada</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Tipo de evento</label>
+                        <input class="input__opcion" type="text" name="" id="evento">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Ubicación</label>
+                        <input class="input__opcion" list="ubicacion" id="ubicacionCotizacion"><datalist id="ubicacion">
+                            <option value="Ubicación1"></option>
+                            <option value="Ubicación2"></option>
+                            <option value="Ubicación3"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Cant. de personas</label>
+                        <input class="input__opcion" type="number" name="" id="cantPersonas">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Teléfono</label>
+                        <input class="input__opcion" type="text" name="" id="telefono">
+                    </div>
+                    <div>
+                        <textarea class="input__opcion" name="" id="detalle"
+                            style="resize: none;margin-top: 5px;">Detalle</textarea>
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos();">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <!--Visualización y reutilización de cotizaciones-->
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Cotizaciones registradas</h1>
+        </div>
+
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de evento</th>
+                        <th>Ubicación</th>
+                        <th>Cant. de personas</th>
+                        <th>Teléfono</th>
+                        <th>Detalle</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fiesta infantil</td>
+                        <td>Ubicación1</td>
+                        <td>150</td>
+                        <td>0000-0000</td>
+                        <td>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet lacinia ante
+                                facilisis
+                                hendrerit. </p>
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                        <td>Resulta</td>
+                    </tr>
+                    <tr>
+                        <td>Quince años</td>
+                        <td>Ubicación3</td>
+                        <td>200</td>
+                        <td>0000-0000</td>
+                        <td>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet lacinia ante
+                                facilisis
+                                hendrerit. </p>
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/editar.png" alt="" class="btn-editar">
+                        </td>
+                        <td>
+                            <input type="image" src="../../img/eliminar.webp" alt="" class="btn-eliminar">
+                        </td>
+                        <td>Pendiente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/Cliente/validacionesCotizaciones.js"></script>
+</body>
+
+</html>

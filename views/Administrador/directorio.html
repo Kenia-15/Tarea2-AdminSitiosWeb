@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/principal/general.css">
+    <title>Directorio</title>
+</head>
+
+<body>
+    <section class="tabla">
+        <div class="encabezado__tabla">
+            <h1>Directorio</h1>
+        </div>
+        <div class="cuerpo__tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Puesto</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre 1</td>
+                        <td>Coordinador </td>
+                        <td>Puesto 1</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20" height="20">
+                        </td>
+                        <td>
+                            <input class="btn-eliminar" type="image" src="../../img/eliminar.webp" alt="" width="20" height="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 2</td>
+                        <td>Coordinador </td>
+                        <td>Puesto 2</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20" height="20">
+                        </td>
+                        <td>
+                            <input class="btn-eliminar" type="image" src="../../img/eliminar.webp" alt="" width="20" height="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre 3</td>
+                        <td>Coordinador </td>
+                        <td>Puesto 3</td>
+                        <td>Activo</td>
+                        <td>
+                            <input class="btn-editar" type="image" src="../../img/editar.png" alt="" width="20" height="20">
+                        </td>
+                        <td>
+                            <input class="btn-eliminar" type="image" src="../../img/eliminar.webp" alt="" width="20" height="20">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <dialog id="modal">
+            <h1 class="titulo__formulario" style="margin-left: -50px;">Mantenimiento de directorio</h1>
+
+            <div class="formulario__modal">
+                <form method="dialog">
+                    <div>
+                        <label class="dialogo__label">Nombre:</label>
+                        <input type="text" name="" id="nombre" class="input__opcion">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Rol:</label>
+                        <input list="cuenta" name="" id="rol" class="input__opcion">
+                        <datalist id="cuenta">
+                            <option value="Administrador"></option>
+                            <option value="Coordinador"></option>
+                            <option value="Cliente"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Puesto:</label>
+                        <input type="text" name="" id="puesto" class="input__opcion">
+                    </div>
+                    <div>
+                        <label class="dialogo__label">Estado:</label>
+                        <input type="text" name="" id="estado" class="input__opcion">
+                    </div>
+
+                    <div class="btn-modal">
+                        <input class="boton btn-save" type="submit" value="Guardar" onclick="validarCampos();">
+                        <input class="boton" id="btn-cerrar-modal" type="submit" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </section>
+
+    <section>
+        <!--Botón para desplegar la ventana emergente con la info. para modificar o agregar una entrada al directorio-->
+        <a><input id="btn-abrir-modal" class="btn__flotante" type="image" src="../../img/agregar.png"
+                title="Agregar directorio" width="50" height="50"></a>
+    </section>
+
+    <script src="../../js/modal.js"></script>
+    <script src="../../js/validaciones/Administrador/validacionesDirectorio.js"></script>
+</body>
+
+</html>

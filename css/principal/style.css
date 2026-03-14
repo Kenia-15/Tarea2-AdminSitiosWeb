@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background: #F5F5F5;
+}
+
+.separacion {
+    margin-bottom: -40px;
+}
+
+/*Sección de ofertas*/
+.cargar__imagen {
+    font-size: 24px;
+    border: 1px solid #000000;
+    padding: 20px;
+    cursor: pointer;
+    margin-left: 60%;
+    border-radius: 50px;
+}
+
+.imagen__click {    
+    font-size: 2px;
+    border: 1px solid #000000;    
+    padding:20px;
+    border-radius: 50px;
+    margin-left: -300px;
+}
+
+.imagen__click-modal {
+    font-size: 24px;
+    border: 1px solid #000000;    
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: -80px;
+    background-color: #f8b985;
+}
+
+#file {
+    display: none;
+    visibility: none;
+}
+
+.add {
+    width: 160px;
+}
+
+/*Sección de reservas*/
+#modal__invitados::-ms-backdrop {
+    background-color: rgba(0,0,0,.55);
+}
+
+#modal__invitados {
+    max-width: 50ch;
+    margin: auto;
+    border: none;
+    border-radius: 5%;
+}
+
+.buscar {
+    height: 30px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid #f8b985;
+    border-radius: 6px;
+    color: #f0852d;
+}
+
+/* Sección de página */
+/*Galería*/
+#galeria input {
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+
+/*Inicio*/
+.pg__inicio {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 10px;
+    width: 100%;
+    text-align: center;  
+}
+
+.pg__inicio textarea {
+    height: 40px;
+}
+
+/*Sección de cotizaciones*/
+#modal-responder::-ms-backdrop {
+    background-color: rgba(0,0,0,.55);
+}
+
+#modal-responder {
+    max-width: 50ch;
+    margin: auto;
+    border: none;
+    border-radius: 5%;
+}
+
+.reservas {
+    height: 700px;
+}
+
+/*Sección de perfil*/
+.div__perfil {
+    display: flex;
+}
+
+.div__perfil .input__opcion {
+    margin-bottom: 5px;
+}
+
+.section__perfil {
+    width: 40%;     
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.titulo__perfil {
+    text-align: center;
+    color: #784008;
+    margin-top: 20px;
+}
+
+form {
+	text-align: left;
+}
+
+.perfil__opcion {
+    padding: 5px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	width: 300px;
+	color: #555;
+}
+
+.section__perfil div > label {
+    padding: 5px;
+	margin: 10px;
+}
+
+.boton_perfil {
+    width: 310px;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8b985; 
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+	margin: 10px;
+    margin-top: 20px;
+}
+
+.boton_perfil:hover {    
+    transition: scale(1.02);
+    background-color: #D39968;
+}
+
+
+/*Sección de reportes / Citas */
+.div__reporte {
+    display: flex;
+}
+
+.div__reporte .input__opcion {
+    margin-bottom: 5px;
+}
+
+.section__rep__cita {
+    width: 40%;     
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.titulo__rep__cita {
+    text-align: center;
+    color: #784008;
+    margin-top: 20px;
+}
+
+form {
+	text-align: left;
+}
+
+.rep__cita__opcion {
+    padding: 5px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	width: 300px;
+	color: #555;
+}
+
+.section__rep__cita div > label {
+    padding: 5px;
+	margin: 10px;
+}
+
+.boton_rep__cita {
+    width: 310px;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8b985; 
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+	margin: 10px;
+    margin-top: 20px;
+}
+
+.boton_rep__cita:hover {    
+    transition: scale(1.02);
+    background-color: #D39968;
+}
+
+
+/* Sección cargar páginas mediante menú */
+#seccion__menu {
+    display: flex;
+    width: 100%;
+}
+
+.cargar__contenido {
+    width: 100%;
+}
+
+.cargar__contenido main {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+#iframe__menu {
+    width: 100%;
+    height: 100vh;
+}

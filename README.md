@@ -1,4 +1,5 @@
 Configuración del workflow:
+
 Paso #1. Luego de haber creado el repositorio y subido el sitio web, se ingresa a GitHub en la sección "Settings". 
 Se dirige a "Pages" y se selecciona la rama "main" la cual será utilizada para el despliegue del sitio web.
 
